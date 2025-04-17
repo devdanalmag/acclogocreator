@@ -4,7 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile Picture Logo Generator</title>
+    <meta name="description" content="ACC Profile Picture Maker - Create your own profile picture with the ACC logo.">
+    <meta name="keywords" content="ACC, Profile Picture Maker, ACC Logo, Community, ACC Army">
+    <meta name="author" content="ACC Community">
+    <link rel="icon" href="ACC.png" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-k6RqeWeci5ZR/Lv4MR0sA0FfDOM8d7x1z5l5e5c5e5e5e5e5e5e5e5e5e5e5e" crossorigin="anonymous">
+    
+    <title>ACC PFP Maker</title>
     <style>
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -161,9 +167,9 @@
         <h1  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">ACC Profile Picture Maker</h1>
         <img src="ACC.png" alt="" srcset="" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px;">
         <div class="link-btn-container">
-            <a class="link-btn" href="https://x.com/acc_community">ACC Twitter Handle</a>
-            <a class="link-btn" href="">ACC Discord</a>
-            <a class="link-btn" href="">ACC Telegram</a>
+            <a class="link-btn" href="https://x.com/acc_community" target="_blank">ACC Twitter Handle</a>
+            <a class="link-btn" href="https://discord.gg/XhRHPaXB" target="_blank">ACC Discord</a>
+            <a class="link-btn" href="https://t.me/acccommunitychannel" target="_blank">ACC Telegram</a>
           </div>
           <p class="info-text">Upload your profile picture and be Part Of the Bigest Community #ACCarmy!</p>
           <div class="upload-container">
@@ -296,8 +302,8 @@
 
                     // Calculate dimensions to fit image in circle while maintaining aspect ratio
                     const circleScale = Math.min(
-                        circleRadius * 2 / img.width,
-                        circleRadius * 2 / img.height
+                        circleRadius * 2.5 / img.width,
+                        circleRadius * 2.5 / img.height
                     );
 
                     const circleWidth = img.width * circleScale;
