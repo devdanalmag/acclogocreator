@@ -52,17 +52,38 @@
             transition: all 0.3s ease;
         }
 
+        .link-btn-container {
+            display: flex;
+            /* Enable flexbox for horizontal layout */
+            justify-content: center;
+            /* Center the buttons horizontally */
+            align-items: center;
+            /* Vertically align items in the center (optional) */
+        }
+
         .link-btn {
-            padding: 12px 24px;
-            background-color: #2e7d32;
-            color: white;
+            padding: 12px;
+            background-color: #5b800c;
+            color: rgb(255, 255, 255);
             border: none;
-            border-radius: 25px;
+            border-radius: 50px;
             cursor: pointer;
             font-size: 16px;
             font-weight: bold;
-            margin: 10px 0;
+            margin: 2px 10px;
+            /* Add horizontal margin between buttons */
             transition: all 0.3s ease;
+            display: inline-block;
+            /* Already present, but important for inline behavior within flexbox */
+        }
+
+        /* Optional: Adjust margin for the first and last button if needed */
+        .link-btn-container>.link-btn:first-child {
+            margin-left: 0;
+        }
+
+        .link-btn-container>.link-btn:last-child {
+            margin-right: 0;
         }
 
         .upload-btn:hover {
@@ -137,16 +158,19 @@
 
 <body>
     <div class="container">
-        <h1>Profile Picture Logo Generator</h1>
-        <p class="info-text">Upload your profile picture and we'll place it in the center of the logo!</p>
-
-        <div class="upload-container">
+        <h1  style="font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">WELCOME AREWA CRYPTO COMMUNITY Profile Picture Generator</h1>
+        <img src="ACC.png" alt="" srcset="" style="width: 200px; height: 200px; border-radius: 50%; margin-bottom: 20px;">
+        <div class="link-btn-container">
+            <a class="link-btn" href="https://x.com/acc_community">ACC Twitter Handle</a>
+            <a class="link-btn" href="">ACC Discord</a>
+            <a class="link-btn" href="">ACC Telegram</a>
+          </div>
+          <p class="info-text">Upload your profile picture and be Part Of the Bigest Community #ACCarmy!</p>
+          <div class="upload-container">
             <input type="file" id="upload-input" accept="image/*" style="display: none;">
             <button class="upload-btn" id="upload-btn">Upload Profile Picture</button>
         </div>
-        <a class="link-btn" href="">ACC Twitter Handle</a>
-        <a class="link-btn" href="">ACC Discord</a>
-        <a class="link-btn" href="">ACC Telegram</a>
+        
         <div class="preview-container">
             <div class="preview-item">
                 <canvas id="original-canvas" width="300" height="300"></canvas>
